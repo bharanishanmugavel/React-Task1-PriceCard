@@ -1,9 +1,9 @@
-import PriceCards from "./components/Pricecard";
+import PriceCard from "./components/Pricecard";
 function App(){
   const data=[
     {
       title:"FREE",
-      price:"$0/month",
+      price:"$0/Month",
       color: "white",
         features: [
           { name: "Single User", isAvailable: true },
@@ -19,7 +19,7 @@ function App(){
       },
       {
         title: "PLUS",
-        price:"$9/month",
+        price:"$9/Month",
         color: "white",
         features: [
           { name: "Single User", isAvailable: true },
@@ -35,7 +35,7 @@ function App(){
       },
       {
         title: "PRO",
-        price:"$49/month",
+        price:"$49/Month",
         color: "white",
         features: [
           { name: "Single User", isAvailable: true },
@@ -53,15 +53,14 @@ function App(){
         <>
         <div className="container">
           {data.map((element, index) => (
-            <PriceCards
+            <PriceCard
               key={index}
               width={300}
-              height={500}
+              height={550}
               background={element.color}
               title={element.title}
               items={element.features}
               price={element.price}
-            
             />
           ))}
           </div>
@@ -72,4 +71,11 @@ function App(){
   
 
 export default App;
+
+
+
+
+
+
+
 
